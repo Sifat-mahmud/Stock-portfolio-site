@@ -1,0 +1,93 @@
+body{
+	background: linear-gradient(#e0f5ff,#ffebf2);
+	background-repeat:no-repeat;
+	min-height:100vh;
+}
+#signUp{
+	
+	padding-top: 100px;
+	display: none;
+
+}
+.signUp{
+	background-color: #72c1ff;
+	color: black;
+	border-radius: 5px;
+}
+#logIn{
+	
+	padding-top: 100px;
+	
+}
+.logIn{
+	background-color: #72c1ff;
+	color: black;
+	border-radius: 5px;
+}
+td{
+	padding: 5px;
+	align-self: center;
+}
+table{
+	padding-top:15px;
+	border-collapse: collapse;
+	
+}
+.elements{
+	background-color: white;
+	padding: 10px;
+	border-radius: 15px;
+}
+.elements:hover{
+	font-size: 20px;
+
+
+}
+.btn:hover{
+	font-size: 20px;
+	background-color: green;
+	text-decoration-color: white;
+	border-radius: 10px;
+}
+
+.Logbtn:hover{
+	font-size: 20px;
+	background-color: red;
+	text-decoration-color: white;
+	border-radius: 10px;
+}
+
+.button{
+	background-color: #883098;
+	color:white;
+	border-color:#B592B5;
+	border-radius: 40px;
+
+}
+.button:hover{
+	font-size: 15px;
+	background-color: #902775;
+}
+#portfolio{
+	display: none;
+}
+
+.pop {
+	position: fixed;
+	z-index: 100;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+
+}
+
+.content {
+	background: white;
+	padding: 30px;
+	background-color:#72c1ff; 
+	border-radius: 10px;
+}

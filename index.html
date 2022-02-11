@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+	<div class="pop" id="pop">
+		<div class="content">
+			<table>
+
+			<tr style="display: none;">
+				<td id="assetLocStr"></td>
+				<td id="invstStr"></td>
+			</tr>
+
+			<tr>
+				<td>Trade code: </td>
+				<td id="tradeCode"></td>
+			</tr>
+
+			<tr>
+				<td>Present price</td>
+				<td id="presentPriceTd"></td>
+			</tr>
+
+			<tr>
+				<td>Previous invest</td>
+				<td id="previousInvest"></td>
+			</tr>
+
+			<tr >
+				<td>Invest amount</td>
+				<td><input type="numbet" id="amount" placeholder=" Enter amount to invest .."></td>
+			</tr>
+
+			<tr style="padding: 10px;">
+				<td id="investBtn"></td>
+				<td ><input style="float: right;" type="button" name="Cancel" value="Cancel"  onclick="DisplayOne('pop','portfolio');"></td>
+			</tr>
+			</table>
+			
+			
+
+		</div>
+	</div>
+
+
+
+	<div  id="logIn" align="center">
+		<table class="logIn">
+			<tr >
+				<td style="padding-top: 13px;"> User name</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="username" placeholder=" enter username."></td>
+			</tr>
+			<tr>
+				<td> Password</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="password" placeholder=" enter your password."></td>
+			</tr>
+			<tr>
+				<td id="err" ></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="button"  class="button" value="Log in" onclick="CheckLog('username','password');"></td>
+			</tr>
+			<tr>
+				<td> Dont have an account ?<br>
+				 Click here to <input type="button" value="Sign Up" name="SignIn" class="button" onclick="DisplayOne('logIn','signUp');"></td>
+			</tr>
+
+		</table>	
+	</div>
+
+
+	<div id="signUp" align="center">
+		<table class="signUp">
+			<tr>
+				<td>User name</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="username1" placeholder=" enter username."></td>
+			</tr>
+			<tr>
+				<td>Email address</td>
+			</tr>
+			<tr>
+				<td><input type="email" id="email" placeholder=" enter your email."></td>
+			</tr>
+			<tr>
+				<td>
+				Gender
+				<input type="radio" name="gender" value="Male">Male
+				<input type="radio" name="gender" value="Female">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="password1" placeholder=" enter your password."></td>
+			</tr>
+
+			<tr>
+				<td>Confirm Password</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="password2" placeholder=" confirm your password."></td>
+			</tr>
+			<tr>
+				<td id="errs" ></td>
+			</tr>
+
+			<tr>
+				<td align="center"><input type="button"  value="SignUp" class="button"  onclick="CheckSignUp();"></td>
+			</tr>
+
+
+			<tr>
+				<td>Already have an account ?<br>
+				Click here to <input type="button" value="Log in" name="Sign up" class="button" onclick="DisplayOne('signUp','logIn');"></td>
+			</tr>
+
+		</table>
+		
+	</div>
+
+
+
+
+	<div id="portfolio" align="center" >
+		<table id="field"></table>
+
+	</div>
+
+
+		
+</body>
+<script type="text/javascript" src="control.js"></script>
+</html>
+
